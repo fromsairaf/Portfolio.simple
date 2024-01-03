@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* #container{
+            width:100%;
+            height:100vh;
+            
+        } */
+       .row1{
+        position: relative;
+        display:flex;
+        justify-content: end;
+        align-items: center;
+       }
+       .image-text{
+        position:absolute;
+        padding:30px;
+        color:white;
+       }
+       .btn01{
+        border:none;
+        padding:15px ;
+        font-size:16px;
+        margin:10px 0;
+        border:1px solid #eeee;
+        border-radius: 5px;
+        color:rgb(82, 111, 131);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color:#eeee;
+       }
+       .btn01:hover{
+        
+        background-color:#718ab0;
+        color:#eeee;
+        cursor: pointer;
+        border:1px solid rgb(82, 111, 131);
+        
+
+       }
+       #aimg{
+        width:100vw;
+         height:50vh;
+         opacity: 0.80;
+         box-sizing: border-box;
+       }
+       /* ---- */
+       /* navigation bar */
+nav{
+    background-color: #718ab0;
+    padding: 0 5vw;
+    display: flex;
+    justify-content:space-between; 
+}
+ul{ 
+    display: flex;
+    color:rgb(38, 45, 49);
+}
+label{
+    font-size:20px;
+    color:#eee;
+    align-self: center;
+    font-weight: bolder;
+}
+li{
+    list-style-type: none;
+    padding:15px;
+}
+li:hover{
+    background-color:#eee;
+    color: #718ab0;
+    cursor: pointer;
+}
+
+/* STYLING FOR ROW 2*/
+.row2{
+    padding:5vw;
+}
+#abc{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2vw;
+    color:rgb(82, 111, 131);
+}
+.row2-p{
+    padding:1vw;   
+}
+#services{
+    font-size: 30px;
+}
+#services-options{
+    /* border:2px solid red; */
+    color:rgb(38, 45, 49);
+    display:flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    width:100%;
+    padding:0 7vw;
+}
+.option{
+    /* border:2px solid red; */
+    width:35%;
+    margin:0 2vw;
+}
+.S_head, .S_para{
+    padding:0.5vw 0;  
+}
+#icons{
+    display: flex;
+    padding: 1vw;
+    justify-content: center;
+}
+.fa-solid{
+    background-color:#718ab0;
+    font-size: 30px;
+    padding:1vw 0;
+    padding:25px 30px;
+    border-radius: 50%;
+    color:white;
+}
+.S_head{
+    color:rgb(82, 111, 131);
+    text-align: center; 
+}
+.S_para{
+    text-align:justify;
+}
+
+/* STYLING FOR ROW 3 */
+.row3{
+    background-color:#f7f5f5;
+    color:rgb(82, 111, 131);
+    padding:4vw 4vw 1vw 4vw;
+    text-align: center;
+   }
+.abd{
+    padding:0.5vw;
+}
+#abd-text{
+    padding-bottom:1vw;
+}
+
+/* Card 01 */
+.line01, .line02, .line03{
+    width:100%;
+    display: flex;
+    gap:4vw;
+    margin-bottom: 4vw;
+}
+.card, .card2, .card3{
+    border:2px solid #b4b4b4;
+    width:33.33%;
+    cursor: pointer;
+}
+/* ------- */
+#container-1{
+    text-align: center;
+}
+.img01{
+    width: 100%;
+}
+#img-text{ 
+    padding:1vw;
+}
+.kkk{
+    padding:0.3vw;
+}
+/* -------- */
+
+.line03{
+    padding:0 7vw;
+
+}
+.card3{
+    border:none;
+    padding:3vw;
+}
+.card3 img{
+    border-radius:50%;
+}
+/* --------- */
+/* code for footer */
+#f_text{
+    padding: 2vw;
+    text-align: center;
+    color:rgb(38, 45, 49);
+
+}
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <label for="">HighTech</label>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div class="row1 row">
+            <img src="1.jpg" alt="image" id="aimg" >
+            <div class="image-text">
+                <h2>Welcome!</h2>
+                <h1>It's Nice To Meet You</h1>
+                <button class="btn01">Register Yourself</button>
+            </div>
+        </div>
+        <div class="row2 row">
+            <div id="abc">
+            <h2 id="services">Services</h2>
+            <p class="row2-p">Get what you demand for!</p>
+            </div>
+            <div id="services-options">
+                <div class="option01 option">
+                    <div id="icons">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <h3 class="S_head">CyberSecurity</h3>
+                    <p class="S_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci omnis 
+                        facere, similique nostrum tempora veritatis assumenda repellat quae ipsam.</p>
+                </div>
+                <div class="option02 option">
+                    <div id="icons">
+                        <i class="fa-solid fa-database" ></i>
+                    </div>
+                    
+                    <h3 class="S_head">Data Storage</h3>
+                    <p class="S_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci omnis 
+                        facere, similique nostrum tempora veritatis assumenda repellat quae ipsam.</p>
+                </div>
+                <div class="option03 option">
+                    <div id="icons">
+                        <i class="fa-solid fa-address-book "></i>
+                    </div>
+                    <h3 class="S_head">Software Development</h3>
+                    <p class="S_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci omnis 
+                        facere, similique nostrum tempora veritatis assumenda repellat quae ipsam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row3 row">
+            <div id="abd-text">
+                <h1 class="abd">PORTFOLIO</h1>
+                <p class="abd">Presenting you the great ones.</p>
+            </div>
+
+            <div>
+                <div class="line01">
+                    <div class="card card01">
+                        <div id="container-1">
+                            <!-- ---- -->
+                            <div class="img-con">
+                                <img  class="img01" src="16.webp" alt="image">
+                                <div id="img-text">
+                                    <h2 class="kkk">Designing</h2>
+                                    <p class="kkk">lorem2</p>
+                                </div>
+                            </div>
+                            <!-- ----- -->
+                    </div>
+                    </div>
+                    
+                    <div class="card card02">
+                        <div id="container-1">
+                            <!-- ---- -->
+                            <div class="img-con">
+                                <img  class="img01" src="11.jpg" alt="image">
+                                <div id="img-text">
+                                    <h2 class="kkk">Development</h2>
+                                    <p class="kkk">lorem2</p>
+                                </div>
+                            </div>
+                            <!-- ----- -->
+                    </div>
+
+                    </div>
+                    <div class="card card02">
+                        <div id="container-1">
+                            <!-- ---- -->
+                            <div class="img-con">
+                                <img  class="img01" src="12.jpg" alt="image">
+                                <div id="img-text">
+                                    <h2 class="kkk">Testing</h2>
+                                    <p class="kkk">lorem2</p>
+                                </div>
+                            </div>
+                            <!-- ----- -->
+                    </div>
+                    </div>
+                </div>
+
+                <div class="line02">
+                    <div class="card2 card02">
+                        <div id="container-1">
+                            <!-- ---- -->
+                            <div class="img-con">
+                                <img  class="img01" src="13.png" alt="image">
+                                <div id="img-text">
+                                    <h2 class="kkk">Database</h2>
+                                    <p class="kkk">lorem2</p>
+                                </div>
+                            </div>
+                            <!-- ----- -->
+                    </div>
+                    </div>
+                    <div class="card2 card02">
+                        <div id="container-1">
+                            <!-- ---- -->
+                            <div class="img-con">
+                                <img  class="img01" src="14.jpg" alt="image">
+                                <div id="img-text">
+                                    <h2 class="kkk">Integration</h2>
+                                    <p class="kkk">lorem2</p>
+                                </div>
+                            </div>
+                            <!-- ----- -->
+                    </div>
+                    </div>
+                    <div class="card2 card02">
+                        <div id="container-1">
+                            <!-- ---- -->
+                            <div class="img-con">
+                                <img  class="img01" src="15.webp" alt="image">
+                                <div id="img-text">
+                                    <h2 class="kkk">Maintainance</h2>
+                                    <p class="kkk">lorem2</p>
+                                </div>
+                            </div>
+                            <!-- ----- -->
+                    </div>
+                </div>   
+            </div>
+
+            <div id="abd-text">
+                <h1 class="abd">Our Amazing Team</h1>
+                <p class="abd">Meet Our Brillient Team!</p>
+            </div>
+
+            <div class="line03">
+                <div class="card3 card02">
+                    <div id="container-1">
+                        <!-- ---- -->
+                        <div class="img-con">
+                            <img  class="img01" src="15.jpg" alt="image">
+                            <div id="img-text">
+                                <h3 class="kkk">Wilson Wong</h3>
+                                <p class="kkk">Bussiness Executive</p>
+                            </div>
+                        </div>
+                        <!-- ----- -->
+                </div>
+                </div>
+                <div class="card3 card02">
+                    <div id="container-1">
+                        <!-- ---- -->
+                        <div class="img-con">
+                            <img  class="img01" src="16.jpg" alt="image">
+                            <div id="img-text">
+                                <h3 class="kkk">Taylor Robinson</h3>
+                                <p class="kkk">Software Engineer</p>
+                            </div>
+                        </div>
+                        <!-- ----- -->
+                </div>
+                </div>
+                <div class="card3 card02">
+                    <div id="container-1">
+                        <!-- ---- -->
+                        <div class="img-con">
+                            <img  class="img01" src="17.jpg" alt="image">
+                            <div id="img-text">
+                                <h3 class="kkk">Martin Ellish</h3>
+                                <p class="kkk">Digital Marketing Expert</p>
+                            </div>
+                        </div>
+                        <!-- ----- -->
+                </div>
+
+
+            </div>  
+            </div>
+
+        </div>
+       </div>
+
+       <div class="footer">
+        <p id="f_text">Copyright 2023, Design By HighTech</p>
+       </div>
+    </div>
+            
+</body>
+</html>
